@@ -1,0 +1,126 @@
+.nav{
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    padding: 0px 60px;
+    height: 55px;
+    z-index: 1;
+    justify-content: space-between;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    color: white;
+    font-size: 14px;
+  
+    background: linear-gradient(to top, transparent 0%, rgba(134, 32, 32, 0.6) 50%);
+}
+.container {
+    padding: 8px 15px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.nav_logo{
+    width: 90px;
+    position: flex;
+    left: 8px;
+    
+
+}
+.nav_avatar{
+    position: right;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+   
+}
+.nav_black{
+ 
+    background-color: #0b0b0b;;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.left_list{
+display: flex;
+cursor: pointer;
+margin: 0;
+padding: 0;
+
+}
+.li_left{
+    padding-right: 20px;
+    cursor: pointer;
+    list-style: none;
+    
+    
+}
+
+   
+    
+    .left span {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .right {
+     
+        display: flex ;
+        position:  absolute;
+        align-items: right;
+        float: right;
+        right:140px; 
+        
+        
+    }
+  .icon {
+        margin: 0px 12px;
+        cursor: pointer;
+      }
+
+
+      .options hr{
+        border: 0.5px solid whitesmoke;
+      }
+      
+        .options {
+          display: none;
+          background-color: #0b0b0b;
+  
+        }
+        .profile:hover .options {
+            display: flex;
+            background-color: #0b0b0b;
+            flex-direction: column;
+            position: absolute;
+            right:8px; 
+            padding-right: 30px;
+            margin-top: 4px;
+          
+          }
+        .right span {
+            padding: 10px;
+            cursor: pointer;
+          }
+          #child{
+            padding-top: 7px;
+            cursor: pointer;
+          }
+          Search{
+              margin-right: 20px;
+          }
+          
+  
+  
+
+ 
+    
+
