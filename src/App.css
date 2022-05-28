@@ -2,5 +2,12 @@
   margin: 0;
 }
 .app {
-  background-color: #111;
+  background-color: #141414;
 }
+.top_row{
+  padding-top: 10px;
+}
+/* 
+--primary: #141414;
+--light: #F3F3F3;
+--dark: 	#686868; */

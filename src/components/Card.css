@@ -1,0 +1,95 @@
+/* .conatiner {
+  width: 100%;
+  max-height: 340px;
+  background-color: yellow;
+  display: flex;
+}
+img {
+  width: 50%;
+  height: 40px;
+} */
+.conatiner{
+  width: 100%;
+ object-fit: cover;
+  display: flex;
+  position: relative;
+
+  height: 400px;
+  max-height: 400px;
+  /* background-image: linear-gradient(to right,#000,transparent);  */
+
+  /* object-fit: contain;
+  color: white;
+  max-height: 280px;
+  background-size: cover;
+  background-image:url(https://image.tmdb.org/t/p/original//3Aj7j0xHXwGntChU1VaL9seBGIe.jpg);
+  background: linear-gradient(to right,rgb(241, 231, 231),transparent); */
+
+
+}
+.card_gradient{
+
+ position: absolute;
+ width: 800px;
+ height:400px;
+ z-index: 1;
+ background-image: linear-gradient(
+  to right,
+  transparent,
+  rgba(17, 17, 17, 0.3),
+rgb(66, 52, 52));
+
+ 
+  /* box-shadow: white; */
+}
+
+.card_icons {
+    display: flex;
+    margin-top: 40px;
+}
+.card_icon {
+  border: 2px solid white;
+ 
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.card_componets{
+  position: relative;
+  padding: 10px 70px;
+  width: 100%;
+
+}
+.card_title p{
+
+  font: 18.16px;
+  line-height: 1.3;
+  padding-top: 0rem;
+  font-size: 3.5rem;
+}
+.discription_img{
+  width: 60%;
+  height: 380px;
+  float: right;
+  padding-left: 10px;
+  
+
+ display: flex;
+ align-items:right;
+ 
+ 
+}
+.content__description h1{
+  /* margin-left: 30px; */
+  /* width: 45rem; */
+  
+
+  line-height: 1.3;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  /* max-width: 360px; */
+  /* max-height: 240px; */
+}
+

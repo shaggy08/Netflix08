@@ -4,19 +4,16 @@ import axios from "../axios";
 import YouTube, { YouTubeProps } from "react-youtube";
 import movieTrailer from "movie-trailer";
 import getYoutubeId from "get-youtube-id";
+import Card from "./Card";
 import ReactPlayer from "react-player";
-import {
-  PlayArrow,
-  Add,
-  ThumbUpAltOutlined,
-  ThumbDownOutlined,
-} from "@material-ui/icons";
+
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
-  const [isHovered, setIsHovered] = useState(false);
+  const [clickedmovies, setclickedMovies] = useState([]);
+  const [isHoveredd, setIsHoveredd] = useState(false);
   const [trailerUrl, setTrailerUrl] = useState("");
 
   useEffect(() => {
@@ -38,6 +35,16 @@ function Row({ title, fetchUrl, isLargeRow }) {
     },
   };
 
+  const handleClickinfo = (movie) => {
+    if (isHoveredd) {
+      setIsHoveredd(false);
+    } else {
+      setIsHoveredd(true);
+    }
+    setclickedMovies(movie);
+  };
+  console.log(isHoveredd);
+  //   console.log(clickedmovies);
   const handleClick = (movie) => {
     if (trailerUrl !== "") {
       setTrailerUrl("");
@@ -51,50 +58,61 @@ function Row({ title, fetchUrl, isLargeRow }) {
       });
     }
   };
+
   var player;
-  function onYouTubeIframeAPIReady() {
-    console.log("done");
-    player = new YouTube.Player("player", {
-      height: "390",
-      width: "640",
-      videoId: trailerUrl,
-      events: {
-        onReady: onPlayerReady,
-      },
-    });
-  }
+  // function onYouTubeIframeAPIReady() {
+  //   console.log("done");
+  //   player = new YouTube.Player("player", {
+  //     height: "390",
+  //     width: "640",
+  //     videoId: trailerUrl,
+  //     events: {
+  //       onReady: onPlayerReady,
+  //     },
+  //   });
+  // }
   function onPlayerReady(event) {
     event.target.playVideo();
   }
-  console.log(trailerUrl);
+  // console.log(trailerUrl);
 
   return (
     <div className="row">
       <h2>{title}</h2>
 
-      <div
-        className="row__posters"
-        //     onMouseEnter={() => setIsHovered(true)}
-        // onMouseLeave={() => setIsHovered(false)} >
-      >
+      <div className="row__posters">
         {movies?.map((movie) => (
-          <img
+          <img className="row_img"
             key={movie.id}
-            onClick={() => handleClick(movie)}
+            // onClick={() => handleClick(movie)}
+            onClick={() => handleClickinfo(movie)}
             className={`row__poster  ${isLargeRow && "row__posterLarge"} `}
             src={`${baseUrl}${
               isLargeRow ? movie?.poster_path : movie?.backdrop_path
             }`}
             alt={movie.name}
+            //     onMouseEnter={() => setIsHovered(true)}
+            // onMouseLeave={() => setIsHovered(false)}
           />
         ))}
-        {/* {isHovered && (
-                  <>
-                   <video src="video/Start-Up.mp4" autoPlay={true} loop />
-                   
-                   </>
-              )} */}
+ 
       </div>
+      {isHoveredd && (
+          <>
+            {/* <div className="card_detail"> */}
+             
+              <Card
+                discription={clickedmovies.overview}
+                poster={clickedmovies.backdrop_path}
+                name={
+                  clickedmovies?.name ||
+                  clickedmovies?.original_title ||
+                  clickedmovies?.original_name
+                }
+              />
+            {/* </div> */}
+          </>
+        )}
       {/* { trailerUrl && <ReactPlayer url={trailerUrl} width="100%" height="390px" controls={true}  playing={true} /> } */}
 
       {/* {trailerUrl && < YouTube videoId={trailerUrl} opts={opts} />} */}

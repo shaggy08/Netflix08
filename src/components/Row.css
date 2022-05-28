@@ -1,12 +1,19 @@
 .row {
   margin-left: 20px;
   color: white;
+  margin-top: 45px;
 }
-img {
+.row_img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+/* .card_detail {
+  display: block;
+  width: 100%;
+  height: 240px;
+  background-color: white;
+} */
 .row__poster {
   width: 100%;
   object-fit: contain;
@@ -23,14 +30,15 @@ img {
   color: white;
   */
 }
-video {
+
+/* video {
   width: 100%;
   height: 240px;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 .row__poster:hover .itemInfo {
   display: flex;
   flex-direction: column;
@@ -63,11 +71,15 @@ video {
   display: none;
 }
 .row__poster:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .row__posterLarge {
   max-height: 250px;
 }
 .row__posterLarge:hover {
-  transform: scale(2.09);
+  transform: scale(1.2);
+}
+.card_conatin {
+  width: 100%;
+  height: 240px;
 }
