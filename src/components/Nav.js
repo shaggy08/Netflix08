@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import SearchIcon from "@mui/icons-material/Search";
+
 import "./Nav.css";
 
 function Nav() {
@@ -46,12 +50,12 @@ function Nav() {
           <ul className="right_list">
             <li className="li_right">
               {" "}
-              <Search />{" "}
+              <SearchIcon />{" "}
             </li>
             <li className="li_right child"> Children</li>
             <li className="li_right">
               {" "}
-              <Notifications />{" "}
+              <NotificationsIcon />{" "}
             </li>
             <li className="li_right avt ">
               {" "}
@@ -71,7 +75,7 @@ function Nav() {
         alt="AVATAR"
       /> */}
           <div className="profile arrow">
-            <ArrowDropDown className="icon arrow" />
+            <ArrowDropDownIcon className="icon arrow" />
             <div className="options ">
               <span>profile 1</span>
               <span>profile 2</span>

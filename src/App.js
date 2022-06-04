@@ -11,7 +11,8 @@ function App() {
     <div className="app">
       <Nav />
       <Banner />
-      <Row className="top_row"
+      <Row
+        className="top_row"
         title="Netflix Original"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
@@ -20,10 +21,10 @@ function App() {
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow />
       <Row title="comedy" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Action" fetchUrl={requests.fetchActionMovies} />
-      <Row title="Horror" fetchUrl={requests.fetchHorrorMovies} />
-      <Row title="Romance" fetchUrl={requests.fetchNetflixOriginals} />
-      <Row title="Documentry" fetchUrl={requests.fetchDocumentaries} />
-     <Footer />
+      <Row title="Horror" fetchUrl={requests.fetchHorrorMovies}isLargeRow />
+      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
+      <Row title="Documentry" fetchUrl={requests.fetchDocumentaries} isLargeRow/>
+      <Footer />
     </div>
   );
 }

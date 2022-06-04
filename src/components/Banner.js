@@ -90,7 +90,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "../axios";
 import "./Banner.css";
-import { PlayArrow, InfoOutlined } from "@material-ui/icons";
+import InfoIcon from "@mui/icons-material/InfoOutlined";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+//import { PlayArrow, InfoOutlined } from "@material-ui/icons";
 import ReactPlayer from "react-player";
 //import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
@@ -159,11 +161,11 @@ function Banner() {
         </div>
         <div className="banner_buttons">
           <button className="banner_button_play">
-            <PlayArrow />
+            <PlayArrowIcon />
             <span>Play</span>
           </button>
           <button className="banner_button_mylist">
-            <InfoOutlined />
+            <InfoIcon />
             <span>My List</span>
           </button>
         </div>

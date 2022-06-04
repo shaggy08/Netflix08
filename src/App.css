@@ -3,10 +3,15 @@
 }
 .app {
   background-color: #141414;
+
 }
-.top_row{
+.top_row {
   padding-top: 10px;
 }
+.app::-webkit-scrollbar {
+  display: none;
+}
+
 /* 
 --primary: #141414;
 --light: #F3F3F3;

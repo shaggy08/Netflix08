@@ -8,9 +8,9 @@ img {
   width: 50%;
   height: 40px;
 } */
-.conatiner{
+.conatiner {
   width: 100%;
- object-fit: cover;
+  object-fit: cover;
   display: flex;
   position: relative;
 
@@ -24,66 +24,58 @@ img {
   background-size: cover;
   background-image:url(https://image.tmdb.org/t/p/original//3Aj7j0xHXwGntChU1VaL9seBGIe.jpg);
   background: linear-gradient(to right,rgb(241, 231, 231),transparent); */
-
-
 }
-.card_gradient{
 
- position: absolute;
- width: 800px;
- height:400px;
- z-index: 1;
- background-image: linear-gradient(
-  to right,
-  transparent,
-  rgba(17, 17, 17, 0.3),
-rgb(66, 52, 52));
+.card_gradient {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  z-index: 1;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(17, 17, 17, 0.3),
+    rgb(66, 52, 52)
+  );
 
- 
   /* box-shadow: white; */
 }
 
 .card_icons {
-    display: flex;
-    margin-top: 40px;
+  display: flex;
+  margin-top: 40px;
 }
 .card_icon {
   border: 2px solid white;
- 
+
   padding: 5px;
   border-radius: 50%;
   margin-right: 10px;
   font-size: 16px;
 }
-.card_componets{
+.card_componets {
   position: relative;
   padding: 10px 70px;
   width: 100%;
-
 }
-.card_title p{
-
+.card_title p {
   font: 18.16px;
   line-height: 1.3;
   padding-top: 0rem;
   font-size: 3.5rem;
 }
-.discription_img{
+.discription_img {
   width: 60%;
   height: 380px;
   float: right;
   padding-left: 10px;
-  
 
- display: flex;
- align-items:right;
- 
- 
+  display: flex;
+  align-items: right;
 }
-.content__description h1{
+.content__description h1 {
   /* margin-left: 30px; */
   /* width: 45rem; */
-  
 
   line-height: 1.3;
   padding-top: 15px;
@@ -93,3 +85,53 @@ rgb(66, 52, 52));
   /* max-height: 240px; */
 }
 
+.listItem {
+  width: 300px;
+  height: 350px;
+  /* margin-right: 5px; */
+
+  /* position: absolute; */
+  background-color: #141414;
+  object-fit: cover;
+  /* top: -150px; */
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+}
+.rowitem_img {
+  width: 100%;
+  height: 190px;
+}
+
+.rowitem_itemInfo {
+  display: inline-block;
+  flex-direction: column;
+  padding: 5px;
+}
+.rowitem_icons {
+  display: flex;
+  margin-bottom: 10px;
+}
+.rowitem_icon {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.rowitem_icon_play {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.rowitem_icon_play svg {
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+}
+.desc {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
