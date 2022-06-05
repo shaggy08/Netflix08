@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./RowItem.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import AddIcon from "@mui/icons-material/Add";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";
@@ -18,7 +19,7 @@ function RowItem(props) {
       <img className="rowitem_img" src={`${baseUrl}${poster}`} alt="" />
       <div className="rowitem_itemInfo">
         <div className="rowitem_icons">
-          <PlayCircleFilledIcon className="rowitem_icon_play" />
+          <PlayCircleOutlineIcon className=" rowitem_icon rowitem_icon_play" />
           <AddIcon className="rowitem_icon" />
           <ThumbUpIcon className="rowitem_icon" />
           {/* <ThumbDownIcon className="rowitem_icon" /> */}
@@ -36,5 +37,5 @@ function RowItem(props) {
     </div>
   );
 }
-
+// rowitem_icon_play
 export default RowItem;

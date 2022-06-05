@@ -4,13 +4,10 @@
   margin-top: 45px;
   overflow: visible;
   overflow-y: visible;
-overflow-x: scroll;  
+  overflow-x: scroll;
 
-/* overflow-y: visible;
+  /* overflow-y: visible;
 overflow-x: scroll; */
-
-
-
 }
 .row::-webkit-scrollbar {
   display: none;
@@ -28,20 +25,17 @@ overflow-x: scroll; */
   /* max-height: 260px; */
   height: 350px;
   padding: 10px;
-  
 }
 
 .row__poster_container {
-  
   max-height: max-content;
   /* padding-left: 10px; */
   /* height: 150px; */
-  width:max-content;
+  width: max-content;
   padding: 0px 5px 0px 5px;
   overflow-y: visible;
-
+  transition: all 5s ease;
 }
-
 
 .row__poster_container .row__posterLarge {
   width: 180px;
@@ -57,8 +51,7 @@ overflow-x: scroll; */
   object-fit: cover; */
   top: 90px;
   height: 250px;
-  transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
+  
 }
 
 .row__poster_container .row__poster_container_normal {
@@ -70,13 +63,11 @@ overflow-x: scroll; */
   height: 50px;
 }
 
-
 .row .right {
   right: 0px;
 }
-.row .left{
+.row .left {
   left: 0px;
- 
 }
 .row .sliderArrow {
   width: 50px;
@@ -89,27 +80,26 @@ overflow-x: scroll; */
   margin: 0;
   cursor: pointer;
 }
+.row__poster_container :hover{
+  transform: scale(1.01);
+  transition: transform 500ms;
+  
+}
 
-
-
-
-
- .row__poster {
+.row__poster {
   width: 100%;
   object-fit: contain;
   /* max-height: 150px; */
-/* transition: transform 450ms; */
+  /* transition: transform 450ms; */
 
- width: 225px;
+  width: 225px;
   height: 120px;
   background-color: black;
   margin-right: 5px;
   overflow: hidden;
   cursor: pointer;
   color: white;
-  
-} 
- 
+}
 
 /* video {
   width: 100%;
