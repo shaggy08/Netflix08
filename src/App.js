@@ -20,7 +20,7 @@ function App() {
       <Row title="Netflix treding" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow />
       <Row title="comedy" fetchUrl={requests.fetchComedyMovies} />
-      <Row title="Action" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Action" fetchUrl={requests.fetchActionMovies} isLargeRow />
       <Row title="Horror" fetchUrl={requests.fetchHorrorMovies}isLargeRow />
       <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentry" fetchUrl={requests.fetchDocumentaries} isLargeRow/>

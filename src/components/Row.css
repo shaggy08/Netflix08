@@ -4,7 +4,11 @@
   margin-top: 45px;
   overflow: visible;
   overflow-y: visible;
-/* overflow-x: scroll;   */
+overflow-x: scroll;  
+
+/* overflow-y: visible;
+overflow-x: scroll; */
+
 
 
 }
@@ -21,8 +25,8 @@
 
 .row__posters {
   display: flex;
-  max-height: 260px;
-
+  /* max-height: 260px; */
+  height: 350px;
   padding: 10px;
   
 }
@@ -40,8 +44,8 @@
 
 
 .row__poster_container .row__posterLarge {
-  width: 140px;
-  height: 250px;
+  width: 180px;
+  height: 290px;
 }
 .row__poster_container .row__posterLarge .sliderArrow {
   height: 25px;
@@ -59,8 +63,8 @@
 
 .row__poster_container .row__poster_container_normal {
   top: 50px;
-  width: 300px;
-  height: 200px;
+  width: 310px;
+  height: 250px;
 }
 .row__poster_container .row__poster_container_normal .sliderArrow {
   height: 50px;
@@ -76,7 +80,7 @@
 }
 .row .sliderArrow {
   width: 50px;
-  height: 250px;
+  height: 290px;
   background-color: rgb(22, 22, 22, 0.5);
   color: white;
   position: absolute;
@@ -85,9 +89,6 @@
   margin: 0;
   cursor: pointer;
 }
-
-
-
 
 
 

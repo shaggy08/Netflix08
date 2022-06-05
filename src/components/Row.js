@@ -275,7 +275,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
               onMouseLeave={() => handleClickinfo(movie, false, null)}
             >
               {index === hoveredMovieId ? (
-                
                 <RowItem item={clickedmovies} />
               ) : (
                 // <Card
