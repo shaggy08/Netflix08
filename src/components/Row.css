@@ -1,14 +1,19 @@
 .row {
   margin-left: 20px;
   color: white;
-  margin-top: 45px;
+  margin-top: 25px;
   overflow: visible;
   overflow-y: visible;
   overflow-x: scroll;
 
+
   /* overflow-y: visible;
 overflow-x: scroll; */
 }
+ .row_title{
+position: absolute;
+
+ }
 .row::-webkit-scrollbar {
   display: none;
 }
@@ -24,7 +29,7 @@ overflow-x: scroll; */
   display: flex;
   /* max-height: 260px; */
   height: 350px;
-  padding: 10px;
+  padding-top: 40px;
 }
 
 .row__poster_container {
