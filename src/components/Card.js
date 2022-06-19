@@ -91,7 +91,8 @@ function Card(props) {
           <span className="limit">
             {item?.name || item?.original_title || item?.original_name}
           </span>
-          <span>2h30min </span>
+      <br></br>
+          <span>2h30minljsfg</span>
           {/* <span>{2022}</span> */}
         </div>
         <div className="desc">{truncate(item.overview, 100)}</div>
